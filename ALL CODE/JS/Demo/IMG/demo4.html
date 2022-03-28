@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var SinhVien = {
+            Masv: "PH25302",
+            ten: "Nguyen Dao Tin",
+            diem: "10",
+            ketQua: function() {
+                if (this.diem >= 5) return "ĐỖ";
+                else return "Trượt";
+
+
+
+
+
+            }
+
+        }
+        document.write("Thông tin Sinh Viên <br/>");
+        document.write("ID + " + SinhVien.masv + "<br/>");
+        document.write("Tên + " + SinhVien.ten + "<br/>");
+        document.write("Điểm + " + SinhVien.diem + "<br/>");
+        document.write("Kết quả + " + SinhVien.ketQua() + "<br/>");
+    </script>
+</body>
+
+</html>

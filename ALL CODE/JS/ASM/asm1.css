@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.header-main {
+    height: 150px;
+    background: #ffcc99;
+    display: flex;
+    /* background-image: url(logo-asus-den-trang-hinh-nen-5120x1440_78.jpg); */
+    padding-left: 300px;
+    background-repeat: no-repeat;
+
+   
+    
+}
+
+.nav-bar {
+    line-height: 24px;
+    padding: 10px 10px;
+    background: #38e9ec;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 50%);
+}
+.nav-bar ul a{
+    
+    line-height: 24px;
+    padding: 10px 10px;
+    background: pink;
+    text-align: center;
+    box-shadow: 2px 2px 8px rgb(0 0 0 / 50%);
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 750;
+    background-color: #ffcc99;
+    border: 1px solid #cdcdcd;
+    padding: 10px;
+    
+}
+.footer-main {
+    height: 50px;
+    background: #2d3246;
+    margin-top: 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+.home-work {
+    
+    margin-top: 5px;
+    padding-bottom: 20px;
+    min-height: 600px;
+    width: 100%;
+    background: #ffffff;
+    border-top: 2px solid #EEA200;
+    align-items: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.image{
+    display: flex;
+    justify-content: center;
+    
+
+    height: 100%;
+    width: 1440px
+    
+
+}
+.display{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.baitap{
+    display: none;
+   
+
+}
+.active-baitap{
+    display: flex;
+}
+.product{
+    display: flex;
+    height: 400px;
+    width: 800px;
+    justify-content: center;
+}
+h3{
+    text-align: center;
+}

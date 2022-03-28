@@ -1,0 +1,25 @@
+h1 {
+    color: #FF0000;
+    font-size: 20pt;
+}
+
+img {
+    border: 1px solid #CCCCCC;
+}
+
+#Doan1 {
+    font-size: 14pt;
+    font-style: italic;
+}
+
+#Doan2 {
+    font-style: italic;
+}
+
+#Doan3 {
+    font-style: italic;
+}
+
+p {
+    font-style: italic;
+}

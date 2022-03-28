@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" href="asm1.css" />
+
+  <body>
+    <div class="wrapper">
+      <header class="header-main">
+        <img src="logo-ngang.png" alt="" srcset="" />
+      </header>
+      <div class="nav-bar">
+        <ul>
+          <div onclick="changeHomeWork(0)">Bai 1</div>
+          <div onclick="changeHomeWork(1)">Bai 2</div>
+          <div onclick="changeHomeWork(2)">Bai 3</div>
+          <div onclick="changeHomeWork(3)">Bai 4</div>
+        </ul>
+      </div>
+      <div class="home-work">
+        <div class="image baitap active-baitap">
+          <img id="img" onclick="changeImage()" src="nike1.png" alt="" />
+        </div>
+
+        <div class="baitap">
+          <div class="display">
+            <h3>Chọn sản phẩm </h3>
+            <div class="product">
+              <img id="img-bai2" src="" alt="" />
+            </div>
+            <select class="select" onchange="changeProduct(0)">
+              <option>-----Vui lòng chọn sản phẩm-------</option>
+              <option value="sp1">Sản phẩm 1</option>
+               
+            
+             
+              <option value="sp2">Sản phẩm 2</option>
+              <option value="sp3"> Sản phẩm 3</option>
+            </select>
+            <p id="ten">Chọn sản phẩm: </p>
+            <p id="gia">Giá tiền:</p>
+          </div>
+          
+        </div>
+
+        <div class="baitap">
+          <p>123</p>
+        </div>
+
+        <div class="baitap">
+          <p>456</p>
+        </div>
+      </div>
+
+      <footer class="footer-main">
+        Nguyễn Đào Tin PH25302 - Cao Đẳng FPT POLYTECHNIC
+      </footer>
+    </div>
+    <script>
+      var index = 1;
+      function changeImage() {
+        var imgs = ["nike1.png", "nike2.jpg", "nike3.webp", "nike4.jpg"];
+        document.getElementById("img").src = imgs[index];
+        index++;
+        if (index == 4) {
+          index = 0;
+        }
+      }
+      setInterval(changeImage, 2000);
+    </script>
+    <script src="bai2.js"></script>
+  </body>
+</html>

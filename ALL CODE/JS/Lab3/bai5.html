@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <button onclick="getNum(1)">1</button>
+        <button onclick="getNum(2)">2</button>
+        <button onclick=" getNum(3)">3</button>
+        <button onclick=" getNum(4)">4</button>
+        <button onclick=" getNum(5)">5</button>
+        <button onclick=" getNum(6)">6</button>
+        <button onclick=" getNum(7)">7</button>
+        <button onclick=" getNum(8)">8</button>
+        <button onclick=" getNum(9)">9</button>
+        <button onclick="getOp('+')">+</button>
+        <button onclick="getOp('-'
+        )">-</button>
+        <button onclick="getOp('*')">*</button>
+        <button onclick="getOp('/')">/</button>
+        <button onclick="C">New</button>
+        <button onclick="kq()">=</button>
+    </p>
+    <script>
+        var a = null;
+        b = null;
+        o = null;
+
+        function getNum(x) {
+            if (a == null) a = x;
+            else b = x;
+        }
+
+        function getOp(x) {
+            o = x;
+        }
+
+        function kq() {
+            switch (o) {
+                case "+":
+                    alert(a + b);
+                    break;
+                case "-":
+                    alert(a - b);
+                    break;
+                case "*":
+                    alert(a * b);
+                    break;
+                case '/':
+                    alert(a / b);
+                    break;
+            }
+        }
+
+        function C() {
+            o = null
+            a = null
+            b = null
+
+        }
+    </script>
+</body>
+
+</html>

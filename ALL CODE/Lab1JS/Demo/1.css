@@ -1,0 +1,21 @@
+.box1 {
+    width: 300px;
+    height: 200px;
+    background: red;
+    color: wheat;
+    border-right: 5px solid black;
+    padding: 20px 30px;
+    margin: 30px;
+}
+
+.box1:hover {
+    box-shadow: 0 0 40px #000;
+}
+
+.box2 {
+    width: 300px;
+    height: 200px;
+    background: pink;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        while (true) {
+            var sobimat = Math.random(Math.random() * 100);
+            var sonhap = prompt("Nhập vào số của bạn");
+            if (sonhap == sobimat) {
+                alert("Bạn đã đoán trúng");
+                break;
+            } else if (sonhap > sobimat) {
+                alert("Số bạn nhập lớn hơn số bí mật");
+
+
+            } else {
+                alert("Số bạn nhập bé hơn số bí mật");
+
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>

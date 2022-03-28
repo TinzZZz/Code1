@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>
+        <button onclick="getNum(2)">2</button>+
+        <button onclick="getNum(8)">8</button>
+        <button onclick="kq()">=</button>
+        <button onclick=""></button>
+    </p>
+    <script>
+        var a = null;
+        b = null;
+
+        function getNum(x) {
+            if (a == null) a = x;
+            else b = x;
+
+
+        }
+
+        function kq() {
+            alert(a + b);
+            a = null
+            b = null
+        }
+    </script>
+</body>
+
+</html>
