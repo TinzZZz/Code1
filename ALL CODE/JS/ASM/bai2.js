@@ -6,7 +6,7 @@ function changeHomeWork(tonghop) {
   //   thay giá trị mặc định thành i, i ngày càng tăng i ++
 
   for (let i = 0; i < baitap.length; i++) {
-      baitap[i].classList.remove("active-baitap");
+        baitap[i].classList.remove("active-baitap");
   }
   // add them class active bai tap vao 'the bai tap' can hien thi vao the
   // tonghop là tham số khi mình truyền vao funtion,
@@ -16,8 +16,8 @@ function changeProduct(){
     // var product = document.getElementsByTagName()
      var getSelect = document.getElementsByClassName("select");
      
-     console.log(getSelect);
-     getSelect[0].value
+    //  console.log(getSelect);
+    //  getSelect[0].value
      console.log(getSelect[0].value);
      var getImg = document.getElementById('img-bai2');
      getImg.src = "nike3.webp";

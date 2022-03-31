@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+
+    </div>
+    <p>
+        <button>Create Element</button>
+    </p>
+    <script>
+        var container = document.getElementById("container");
+        var btnCreat = document.getElementsByTagName("button");
+        //////// tạo element node h1
+        var newH1 = document.createElement("h1");
+        btnCreat[0].onclick = function(){
+            container.appendChild(newH1).innerHTML = "hehehe";
+            newH1.setAttribute("id","abc");
+            newH1.setAttribute("WE17321","aduu");
+            newH1.innerHTML = newH1.getAttribute("we17321");
+        }
+    </script>
+</body>
+
+ 
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Iphone X</td>
+            <td> $3000</td>
+            <td><button onclick="them(this)">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Iphone 11</td>
+            <td> $4000</td>
+            <td><button onclick="them(this)">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Iphone 12</td>
+            <td> $5000</td>
+            <td><button onclick="them(this)">Thêm</button></td>
+        </tr>
+        <tr>
+            <td>Iphone 13</td>
+            <td> $6000</td>
+            <td><button onclick="them(this)">Thêm</button></td>
+        </tr>
+    </table>
+    <h3>GIỎ HÀNG CỦA BẠN </h3>
+    <table border="1" id="cart">
+
+    </table>
+    <h3>TỔNG SỐ TIỀN: $ <span id="tong">0</span></h3>
+    <script>
+        function them(button){
+            var row = button.parentElement.parentElement.cloneNode(true);
+            var btnXoa = row.getElementsByTagName("button")[0];
+            btnXoa.innerText = "Xoa";
+            btnXoa.setAttribute('onclick','xoa(this)');
+            document.getElementById("cart").appendChild(row);
+        }
+        function xoa(button){
+            var row = button.parentElement.parentElement;
+            document.getElementById("cart").removeChild(row);
+        }
+        function tinhtong(){
+            var cart = document.getElementById("cart")
+            var rows = cart.getElementsByTagName("tr")
+            var tong = 0;
+            for(let i = 0;i < rows.length;i++){
+                var cells = rows[i].getElementsByTagName("td");
+                var price = cells[1].innerText;
+                tong += price;
+                tinhtong();
+            }
+            document.getElementById("tong").innerText = tong;
+        }
+    </script>
+</body>
+</html>
